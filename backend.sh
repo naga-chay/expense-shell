@@ -41,7 +41,7 @@ VALIDATE $? "Installing nodejs"
 
 #Below code will be useful for idempotent nature
 
-id expense -y &>>$LOGFILE
+id expense &>>$LOGFILE
 if [ $? -ne 0 ]
 then
    useradd expense &>>$LOGFILE
